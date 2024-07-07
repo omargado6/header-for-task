@@ -1,14 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const openIcon = document.getElementById('open-icon');
-    const closeIcon = document.getElementById('close-icon');
-
-    mobileMenuButton.addEventListener('click', () => {
-        const isOpen = mobileMenu.getAttribute('aria-expanded') === 'true';
-        mobileMenuButton.setAttribute('aria-expanded', !isOpen);
-        mobileMenu.classList.toggle('hidden');
-        openIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-    });
+document.getElementById('mobile-menu-button').addEventListener('click', function () {
+    var sidebar = document.getElementById('sidebar');
+    var openIcon = document.getElementById('open-icon');
+    if (sidebar.classList.contains('-left-full')) {
+        sidebar.classList.remove('-left-full');
+        sidebar.classList.add('left-0');
+    }
 });
+
+document.getElementById('closeSidebarButton').addEventListener('click', function () {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('left-0');
+    sidebar.classList.add('-left-full');
+});
+
