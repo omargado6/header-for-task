@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link href="output.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="scripts.js" defer></script>
     <title>Replicated Design</title>
   </head>
@@ -18,135 +15,50 @@
         <div class="relative flex h-20 items-center justify-between">
           <!-- Mobile Button -->
           <div class="absolute inset-y-0 left-0 flex items-center navW:hidden">
-            <button
-              id="mobile-menu-button"
-              type="button"
-              class="relative inline-flex items-center justify-center rounded-md p-2 text-white"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
+            <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white" aria-controls="mobile-menu" aria-expanded="false">
               <span class="absolute -inset-0.5"></span>
               <span class="sr-only">Open main menu</span>
               <!-- Menu is closed -->
-              <svg
-                id="open-icon"
-                class="block h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
+              <svg id="open-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
               </svg>
             </button>
             <a href="#" class="relative rounded-full navW:hidden">
               <span class="sr-only">search</span>
-              <svg
-                focusable="false"
-                class="block h-4 w-4 ml-2"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
+              <svg focusable="false" class="block h-4 w-4 ml-2" viewBox="0 0 18 18">
+                <path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
               </svg>
             </a>
             <!-- Sidebar -->
-            <div
-              id="sidebar"
-              class="transition-all duration-500 fixed top-0 -left-full h-screen navW:hidden w-96 max-sm:w-4/5 bg-white shadow-xl text-black text-lg font-sans font-bold overflow-x-hidden overflow-y-auto"
-            >
+            <div id="sidebar" class="transition-all duration-500 fixed top-0 -left-full h-screen navW:hidden w-96 max-sm:w-4/5 bg-white shadow-xl text-black text-lg font-sans font-bold overflow-x-hidden overflow-y-auto">
               <div class="py-8 flex flex-col h-full">
                 <!-- Close Button -->
-                <button
-                  id="closeSidebarButton"
-                  class="absolute top-4 left-5 text-black w-10 h-10 flex items-center justify-center"
-                >
-                  <svg
-                    focusable="false"
-                    width="14"
-                    height="14"
-                    class="icon icon--close"
-                    viewBox="0 0 14 14"
-                  >
-                    <path
-                      d="M13 13L1 1M13 1L1 13"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    ></path>
+                <button id="closeSidebarButton" class="absolute top-4 left-5 text-black w-10 h-10 flex items-center justify-center">
+                  <svg focusable="false" width="14" height="14" class="icon icon--close" viewBox="0 0 14 14">
+                    <path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path>
                   </svg>
                 </button>
                 <nav class="flex-1 pt-10 px-8">
                   <ul class="flex flex-wrap gap-3">
                     <li class="border-b-2 w-full">
-                      <a
-                        href="#"
-                        class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative"
-                        >Shop by Category<span class="absolute right-0"
-                          >+</span
-                        ></a
-                      >
+                      <a href="#" class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative">Shop by Category<span class="absolute right-0">+</span></a>
                     </li>
                     <li class="border-b-2 w-full">
-                      <a
-                        href="#"
-                        class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative"
-                        >Shop by Device<span class="absolute right-0"
-                          >+</span
-                        ></a
-                      >
+                      <a href="#" class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative">Shop by Device<span class="absolute right-0">+</span></a>
                     </li>
                     <li class="border-b-2 w-full">
-                      <a
-                        href="#"
-                        class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative"
-                        >Collections<span class="absolute right-0">+</span></a
-                      >
+                      <a href="#" class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative">Collections<span class="absolute right-0">+</span></a>
                     </li>
                     <li class="w-full">
-                      <a
-                        href="#"
-                        class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative"
-                        >More<span class="absolute right-0">+</span></a
-                      >
+                      <a href="#" class="flex items-center py-2 mb-2 uppercase font-san font-extrabolds relative">More<span class="absolute right-0">+</span></a>
                     </li>
                   </ul>
                 </nav>
                 <div class="pb-6 w-full">
-                  <a
-                    href="#"
-                    class="absolute flex items-center gap-2 p-2 border-t-2 w-full pl-6 font-normal"
-                  >
-                    <svg
-                      focusable="false"
-                      width="18"
-                      height="17"
-                      viewBox="0 0 18 17"
-                    >
-                      <circle
-                        cx="9"
-                        cy="5"
-                        r="4"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linejoin="round"
-                      ></circle>
-                      <path
-                        d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      ></path>
+                  <a href="#" class="absolute flex items-center gap-2 p-2 border-t-2 w-full pl-6 font-normal">
+                    <svg focusable="false" width="18" height="17" viewBox="0 0 18 17">
+                      <circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
+                      <path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
                     </svg>
                     Account
                   </a>
@@ -155,138 +67,56 @@
             </div>
           </div>
           <!-- Logo && Links Menu -->
-          <div
-            class="flex flex-1 w-max items-center justify-center navW:items-stretch navW:justify-around"
-          >
+          <div class="flex flex-1 w-max items-center justify-center navW:items-stretch navW:justify-around">
             <!-- Logo  -->
             <div class="flex items-center navW:w-max cursor-pointer">
-              <img
-                class="h-6 w-auto"
-                src="/assets/logo.jpg"
-                alt="Your Company"
-              />
+              <img class="h-6 w-auto" src="/assets/logo.jpg" alt="Your Company"/>
             </div>
             <!-- Desktop Menu -->
             <div class="hidden xl:ml-6 navW:block navW:w-full navW:">
               <ul class="flex space-x-4 justify-center" role="list">
                 <li>
-                  <a
-                    href="#"
-                    class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover"
-                    >Shop by Category</a
-                  >
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover">Shop by Category</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover"
-                    >Shop by Device</a
-                  >
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover">Shop by Device</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover"
-                    >Collections</a
-                  >
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover">Collections</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover"
-                    >Blog</a
-                  >
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium relative underline-hover">Blog</a>
                 </li>
               </ul>
             </div>
           </div>
           <!-- Icons Section -->
-          <div
-            class="absolute inset-y-0 right-0 flex gap-5 items-center navW:static navW:inset-auto navW:ml-6 navW:pr-0"
-          >
+          <div class="absolute inset-y-0 right-0 flex gap-5 items-center navW:static navW:inset-auto navW:ml-6 navW:pr-0">
             <a href="#" class="relative rounded-full max-md:hidden">
               <span class="sr-only">E-mail</span>
-              <svg
-                focusable="false"
-                class="block h-5 w-5"
-                class="icon"
-                viewBox="0 0 20 16"
-              >
-                <path
-                  d="M19 4l-9 5-9-5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
-                <path
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  d="M1 1h18v14H1z"
-                ></path>
+              <svg focusable="false" class="block h-5 w-5" class="icon" viewBox="0 0 20 16">
+                <path d="M19 4l-9 5-9-5" fill="none" stroke="currentColor" stroke-width="2"></path>
+                <path stroke="currentColor" fill="none" stroke-width="2" d="M1 1h18v14H1z"></path>
               </svg>
             </a>
             <a href="#" class="relative rounded-full max-navW:hidden">
               <span class="sr-only">search</span>
-              <svg
-                focusable="false"
-                class="block h-5 w-5"
-                class="icon"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
+              <svg focusable="false" class="block h-5 w-5" class="icon" viewBox="0 0 18 18">
+                <path d="M12.336 12.336c2.634-2.635 2.682-6.859.106-9.435-2.576-2.576-6.8-2.528-9.435.106C.373 5.642.325 9.866 2.901 12.442c2.576 2.576 6.8 2.528 9.435-.106zm0 0L17 17" fill="none" stroke="currentColor" stroke-width="2"></path>
               </svg>
             </a>
             <a href="#" class="relative rounded-full max-md:hidden">
               <span class="sr-only">Profile</span>
-              <svg
-                focusable="false"
-                class="block h-5 w-5"
-                class="icon"
-                viewBox="0 0 18 17"
-              >
-                <circle
-                  cx="9"
-                  cy="5"
-                  r="4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                ></circle>
-                <path
-                  d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
+              <svg focusable="false" class="block h-5 w-5" class="icon" viewBox="0 0 18 17">
+                <circle cx="9" cy="5" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></circle>
+                <path d="M1 17v0a4 4 0 014-4h8a4 4 0 014 4v0" fill="none" stroke="currentColor" stroke-width="2"></path>
               </svg>
             </a>
             <a href="#" class="relative rounded-full">
               <span class="sr-only">Carts</span>
-              <svg
-                focusable="false"
-                class="block h-5 w-5"
-                class="icon"
-                viewBox="0 0 20 18"
-              >
-                <path
-                  d="M3 1h14l1 16H2L3 1z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
-                <path
-                  d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                ></path>
+              <svg focusable="false" class="block h-5 w-5" class="icon" viewBox="0 0 20 18">
+                <path d="M3 1h14l1 16H2L3 1z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                <path d="M7 4v0a3 3 0 003 3v0a3 3 0 003-3v0" fill="none" stroke="currentColor" stroke-width="2"></path>
               </svg>
             </a>
           </div>
