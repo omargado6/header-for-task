@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-[#282828] text-white">
+    <nav class="bg-[#282828] text-white fixed top-0 w-full z-10">
       <div class="mx-auto 2xl:mx-16 max-w-full px-2 sm:px-6 navW:px-8">
         <div class="relative flex h-20 items-center justify-between">
           <!-- Mobile Button -->
@@ -123,6 +123,26 @@
         </div>
       </div>
     </nav>
+    <!-- Swiper Container -->
+    <div class="relative ">
+      <div class="swiper h-screen">
+        <div class="swiper-wrapper">
+          <!-- slides -->
+          <div class="swiper-slide bg-[url('../assets/image1.jpg')] w-max bg-cover bg-center">
+            <!-- the content -->
+            <div class="flex flex-col justify-center h-screen items-start text-start bottom-2/4 uppercase px-36 w-6/12">
+                <p class="text-white text-base my-4">premium collection</p>
+                <p class="text-white text-6xl my-4 font-bold">the heritage <span class="block">collection</span> </p>
+                <div class="flex space-x-4 my-4 text-center">
+                  <a class="bg-button-color uppercase w-44 h-12 font-semibold tracking-wider text-black px-5 py-3 cursor-pointer">learn more</a>
+                  <a class="bg-button-color uppercase w-44 h-12 font-semibold tracking-wider text-black px-5 py-3 cursor-pointer">shop</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <!--  -->
     <script src="./script.js"></script>
   </body>

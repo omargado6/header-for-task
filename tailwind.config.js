@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       screens:{
         "navW":'1200px',
+      },colors:{
+        'button-color':'#f3ff34'
       }
     },
   },

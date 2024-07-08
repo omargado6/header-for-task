@@ -19,6 +19,7 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+/* side bar */
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
