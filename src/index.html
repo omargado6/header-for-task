@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <link href="output.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="scripts.js" defer></script>
     <title>Replicated Design</title>
   </head>
@@ -124,67 +124,101 @@
       </div>
     </nav>
     <!-- Swiper Container -->
-    <div class="relative ">
-      <div class="swiper h-screen">
-        <div class="swiper-wrapper">
-          <!-- slide 1 -->
-          <!-- <div class="swiper-slide swWidth:bg-[url('../assets/image1.jpg')] bg-[url('../assets/img1.jpg')] eachSlide">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
-            <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
-                <p class="text-white text-base ">premium collection</p>
-                <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">the heritage <span class="block">collection</span> </p>
-                <div class="flex flex-wrap gap-5  text-center w-full">
-                  <a class="buttonSlides py-3">learn more</a>
-                  <a class="buttonSlides py-3">shop</a>
+    <div class="swiper mySwiper h-screen heightSlide">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+          <div class="swiper-slide swWidth:bg-[url('../assets/image1.jpg')] bg-[url('../assets/img1.jpg')] eachSlide">
+                <div class="absolute inset-0 bg-black opacity-5"></div>
+                <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
+                    <p class="smallText">premium collection</p>
+                    <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">the heritage <span class="block">collection</span> </p>
+                    <div class="flex flex-wrap gap-5  text-center w-full">
+                      <a class="buttonSlides">learn more</a>
+                      <a class="buttonSlides">shop</a>
+                    </div>
                 </div>
             </div>
-          </div> -->
-          <!-- slide 2 -->
-          <!-- <div class="swiper-slide secondSlide multibleSlide eachSlide">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
-            <div class="flex flex-col flex-wrap justify-center h-full items-center text-center uppercase m-auto p-2 relative z-10">
-                <p class="text-white text-sm">Meet the</p>
-                <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold tracking-wider">Sage <span class="swWidth:block">collection</span> </p>
-                  <a class=" py-3 buttonSlides">learn more</a>
-            </div>
-          </div> -->
-          <!-- slide 3 -->
-          <!-- <div class="swiper-slide swWidth:bg-[url('../assets/image3.jpg')] bg-[url('../assets/img3.jpg')] eachSlide">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
-            <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
-                <p class="text-white text-base ">collaboration</p>
-                <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">native union x <span class="swWidth:block">tom dixon</span> </p>
-                <div class="flex flex-wrap gap-5 text-center w-full">
-                  <a class="buttonSlides py-3">learn more</a>
+              <!-- slide 2 -->
+              <div class="swiper-slide secondSlide multibleSlide eachSlide">
+                <div class="absolute inset-0 bg-black opacity-5"></div>
+                <div class="flex flex-col flex-wrap justify-center h-full items-center text-center uppercase m-auto p-2 relative z-10">
+                    <p class="smallText">Meet the</p>
+                    <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold tracking-wider">Sage <span class="swWidth:block">collection</span> </p>
+                      <a class="buttonSlides">learn more</a>
                 </div>
-            </div>
-          </div> -->
-          <!-- slide 4 -->
-         <!-- <div class="swiper-slide thirdSlide multibleSlide eachSlide">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
-            <div class="flex flex-col flex-wrap justify-center h-full items-center text-center uppercase m-auto p-2 relative z-10">
-                <p class="text-white text-sm">charge anywhere, anytime</p>
-                <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold tracking-wider">new jump+ <span class="swWidth:block">powerbank</span> </p>
-                  <a class=" py-3  buttonSlides">shop jump +</a>
-            </div>
-          </div> -->
-          <!-- slide 5 -->
-           <div class="swiper-slide swWidth:bg-[url('../assets/image5.jpg')] imggg bg-[url('../assets/img5.jpg')] eachSlide">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
-            <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
-                <p class="text-white text-base ">new in</p>
-                <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">the maison <span class="swWidth:block">kitsune </span><span class="swWidth:block">collab</span> </p>
-                <div class="flex flex-wrap gap-5 text-center w-full">
-                  <a class="buttonSlides py-3">learn more</a>
+              </div>
+              <!-- slide 3 -->
+              <div class="swiper-slide swWidth:bg-[url('../assets/image3.jpg')] bg-[url('../assets/img3.jpg')] eachSlide">
+                <div class="absolute inset-0 bg-black opacity-5"></div>
+                <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
+                    <p class="smallText">collaboration</p>
+                    <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">native union x <span class="swWidth:block">tom dixon</span> </p>
+                    <div class="flex flex-wrap gap-5 text-center w-full">
+                      <a class="buttonSlides">learn more</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
+              </div>
+              <!-- slide 4 -->
+              <div class="swiper-slide thirdSlide multibleSlide eachSlide">
+                <div class="absolute inset-0 bg-black opacity-5"></div>
+                <div class="flex flex-col flex-wrap justify-center h-full items-center text-center uppercase m-auto p-2 relative z-10">
+                    <p class="smallText">charge anywhere, anytime</p>
+                    <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold tracking-wider">new jump+ <span class="swWidth:block">powerbank</span> </p>
+                      <a class="buttonSlides">shop jump +</a>
+                </div>
+              </div>
+              <!-- slide 5 -->
+              <div class="swiper-slide swWidth:bg-[url('../assets/image5.jpg')] imggg bg-[url('../assets/img5.jpg')] eachSlide">
+                <div class="absolute inset-0 bg-black opacity-15"></div>
+                <div class="flex flex-col flex-wrap justify-center h-full items-start text-start uppercase p-10 pl-20 max-sm:pl-10 relative z-10">
+                    <p class="smallText ">new in</p>
+                    <p class="text-white text-7xl max-sm:text-5xl my-9 font-bold">the maison <span class="swWidth:block">Kitsuné </span><span class="swWidth:block">collab</span> </p>
+                    <div class="flex flex-wrap gap-5 text-center w-full">
+                      <a class="buttonSlides">learn more</a>
+                    </div>
+                </div>
+              </div>
       </div>
+      <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
     </div>
-    <!--  -->
+    </div>
+      <!-- scripts -->
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          }
+        }
+      });
+    </script>
+  
   </body>
 </html>

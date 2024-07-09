@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: sans-serif;
+}
+:root{
+  --button-background : #f3ff34 ;
+}
 .underline-hover::after {
   content: "";
   transform-origin: right;
@@ -55,23 +61,52 @@
   animation-delay: 0.3s;
 }
 /* swiper slides */
+.heightSlide {
+  min-height: 133vw;
+}
+@media (min-width: 741px) {
+  .heightSlide {
+    min-height: 90vw;
+  }
+}
+@media (min-width: 1000px) {
+  .heightSlide {
+    min-height: 48vw;
+  }
+}
+@media (min-width: 1200px) {
+  .heightSlide {
+    min-height: 40vw;
+  }
+}
+.smallText {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
 .buttonSlides {
+  background-image: linear-gradient(178deg, var( --button-background), var( --button-background) 10%, #00000012 10%, #00000012 100%), linear-gradient(var( --button-background), var( --button-background));
+  background-position: 100% -100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 200%, 100% 100%;
+  transition: background-position .3s cubic-bezier(.215, .61, .355, 1);
+  transform: translateZ(0);
   color: black;
   font-size: 14px;
-  background-color: #f3ff34;
   text-transform: uppercase;
-  width: 160px;
-  height: 48px;
-  font-weight: 600;
+  text-align: center;
+  padding: 0 30px;
+  line-height: 48px;
+  font-weight: 700;
   cursor: pointer;
-  letter-spacing: 0.05em;
+  letter-spacing: 1.5px;
 }
-/* will review it */
-/* .imggg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+.buttonSlides:hover {
+  background-position: 100% 25%, 100% 100%;
+}
+/* .buttonSlides:hover {
+  opacity: 80%;
 } */
 .eachSlide {
   width: 100%;
@@ -94,8 +129,9 @@
 }
 @media (min-width: 998px) {
   .multibleSlide {
-    background-size: 50% 100%; /* Adjust size as needed */
-    background-position: left, right; /* Adjust position as needed */
+    background-size: 50% 100%; 
+    background-position: left, right; 
     background-repeat: no-repeat;
   }
 }
+/* button {swiper}*/
