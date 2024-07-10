@@ -5,8 +5,8 @@
 body {
   font-family: sans-serif;
 }
-:root{
-  --button-background : #f3ff34 ;
+:root {
+  --button-background: #f3ff34;
 }
 .underline-hover::after {
   content: "";
@@ -24,6 +24,29 @@ body {
 .underline-hover:hover::after {
   transform-origin: left;
   transform: scaleX(1);
+}
+.cartNumber::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  left: -6px;
+  right: -6px;
+}
+.cartContent {
+  background-color: white;
+  color: black;
+  right: -14px;
+  top: -8px;
+  display: inline-flex;
+  letter-spacing: 0;
+  border-radius: 21px;
+  justify-content: center;
+  align-items: center;
+  min-width: 21px;
+  height: 21px;
+  font-size: 9px;
+  line-height: 1;
 }
 /* side bar */
 @keyframes slideIn {
@@ -86,11 +109,18 @@ body {
   color: white;
 }
 .buttonSlides {
-  background-image: linear-gradient(178deg, var( --button-background), var( --button-background) 10%, #00000012 10%, #00000012 100%), linear-gradient(var( --button-background), var( --button-background));
+  background-image: linear-gradient(
+      178deg,
+      var(--button-background),
+      var(--button-background) 10%,
+      #00000012 10%,
+      #00000012 100%
+    ),
+    linear-gradient(var(--button-background), var(--button-background));
   background-position: 100% -100%, 100% 100%;
   background-repeat: no-repeat;
   background-size: 100% 200%, 100% 100%;
-  transition: background-position .3s cubic-bezier(.215, .61, .355, 1);
+  transition: background-position 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateZ(0);
   color: black;
   font-size: 14px;
@@ -105,9 +135,6 @@ body {
 .buttonSlides:hover {
   background-position: 100% 25%, 100% 100%;
 }
-/* .buttonSlides:hover {
-  opacity: 80%;
-} */
 .eachSlide {
   width: 100%;
   background-size: cover;
@@ -129,9 +156,65 @@ body {
 }
 @media (min-width: 998px) {
   .multibleSlide {
-    background-size: 50% 100%; 
-    background-position: left, right; 
+    background-size: 50% 100%;
+    background-position: left, right;
     background-repeat: no-repeat;
   }
 }
 /* button {swiper}*/
+.swiper-pagination {
+  z-index: 1;
+  pointer-events: none;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  gap: 5px;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  max-width: 1600px;
+  padding-inline: 24px;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  pointer-events: auto;
+  flex-basis: 48px;
+  margin: 0 8px !important;
+  padding: 1px;
+  position: relative;
+  width: 100% !important;
+  height: 2px !important;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0 !important;
+}
+.swiper-pagination-bullet::before,
+.swiper-pagination-bullet::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 2px;
+  transition: background 0.2s ease-in-out;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+}
+.swiper-pagination-bullet::after {
+  background-color: white;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.swiper-pagination-bullet[aria-current="true"]:after {
+  animation: slideshowProgressBarAnimation 5000ms linear;
+  animation-play-state: running, paused;
+  animation-fill-mode: forwards;
+}
+@keyframes slideshowProgressBarAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
