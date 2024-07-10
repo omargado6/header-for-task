@@ -141,17 +141,17 @@ body {
   background-position: center;
 }
 .secondSlide {
-  background-image: url("../assets/image2a.jpg"), url("../assets/image2b.jpg");
+  background-image: url("./assets/image2a.jpg"), url("./assets/image2b.jpg");
 }
 .thirdSlide {
-  background-image: url("../assets/image4a.jpg"), url("../assets/image4b.jpg");
+  background-image: url("./assets/image4a.jpg"), url("./assets/image4b.jpg");
 }
 @media (max-width: 998px) {
   .secondSlide {
-    background-image: url("../assets/img2.jpg");
+    background-image: url("./assets/img2.jpg");
   }
   .thirdSlide {
-    background-image: url("../assets/img4.jpg");
+    background-image: url("./assets/img4.jpg");
   }
 }
 @media (min-width: 998px) {
